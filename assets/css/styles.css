@@ -1,0 +1,13 @@
+
+/* DESING MOBILE FIRST*/
+
+
+/* LANDSCAPE */
+
+@media only screen 
+and (min-device-width:25rem) 
+and (max-device-width:50rem)
+and (orientation:landscape){
+
+}
+
