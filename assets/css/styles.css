@@ -25,7 +25,6 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 .titulos-container{
     text-align: center;
-    border: 1px solid red;
 }
 .titulo{
     font-family: 'Raleway', sans-serif;
