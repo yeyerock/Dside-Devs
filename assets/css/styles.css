@@ -1,5 +1,414 @@
 
 /* DESING MOBILE FIRST*/
+*{
+	padding: 0;
+    margin: 0;
+    border: 0;
+}
+a{
+    text-decoration: none;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+*,*:after,*::before {
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+}
+.titulos-container{
+    text-align: center;
+    border: 1px solid red;
+}
+.titulo{
+    font-family: 'Raleway', sans-serif;
+    color: #3B6075;
+}
+h2,h3,a,p{
+    font-family: 'Ubuntu', sans-serif; 
+}
+h2{
+    color: #4DBCF8;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position:relative;
+    overflow:hidden;
+    z-index:1;
+    
+}
+
+.content{
+    position: relative;
+    width:90%;
+    height: 70%;
+    left: 5%;
+    top: 5%;
+}
+header{
+    width: 100vw;
+    height: 11vh;
+    top: 0%;
+    position:relative;
+    overflow:hidden;
+    z-index:1;
+    background-color: #333333;
+}
+#cabecera #logo{
+    z-index: 2;
+    margin: auto;
+    margin-top:2%;
+    width: 25%;
+    border: 1px solid red;
+}
+#logo img{
+    width: 100%;
+    height: auto;
+}
+
+
+.boton-nav{
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 999;
+}
+.boton-nav i{
+    position: relative;
+    font-size: 1.9rem;
+    color: #3B6075;
+    text-align: center;
+}
+.boton-nav i:hover{
+    color: #4DBCF8;
+}
+#boton1, #boton2{
+ position: absolute;
+ top: 90%;
+}
+#boton1{
+left: 5%;
+}
+#boton2{
+ right:4%;
+}
+
+
+#home{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+}
+#home .titulo{
+    position : relative;
+    color :rgb(0, 0, 0);
+    width: 100%;
+    top: 50%;
+    border: 1px solid blue;
+}
+.subtitulo1 , .subtitulo2{
+    white-space: nowrap;
+}
+.subtitulo1 {
+    position : absolute;
+    margin-top:8%;
+    font-size : 1.8em;
+    font-weight : bold;
+    animation : translate1 3s infinite;
+}
+.titulo	.subtitulo2 {
+    position : absolute;
+    right : 0%;
+    font-size : 1.5em;
+    animation : translate2 5s infinite;
+}
+@keyframes translate1{
+  0% { opacity : 0; transform: translate(-16px, 0); }
+  20% { opacity : 1; transform: translate(0, 0); }
+  65% { opacity : 1; transform: translate(0, 0); }
+  80% { opacity : 0; transform: translate(16px, 0); }
+  100% { opacity : 0; transform: translate(16px, 0); }
+}
+@keyframes translate2{
+  0% { opacity : 0; transform: translate(-32px, 0); }
+  18% { opacity : 1; transform: translate(0, 0); }
+  64% { opacity : 1; transform: translate(0, 0); }
+  82% { opacity : 0; transform: translate(32px, 0); }
+  100% { opacity : 0; transform: translate(32px, 0); }
+}
+
+
+
+#portafolio{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    border: 1px solid red;
+}
+#portafolio .titulos-container{
+    margin-top: 0%;
+}
+#portafolio .contenedor-proyectos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid blue;
+}
+#portafolio .proyecto {
+    width: 30%;
+    height: auto;
+    margin: auto;
+    margin-top:2%;
+}
+#portafolio .proyecto img{
+    width: 100%;
+    height: auto;
+}
+#portafolio .proyecto a:hover img{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#portafolio .titulo{
+    font-size: 1.5em;
+}
+
+
+
+#servicios{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    border: 1px solid blue;
+}
+#servicios .servicios-container{
+    margin-top: 0%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid purple;
+}
+#servicios .subtitulo-servicios{
+    color: #3B6075;
+    text-align: justify;
+}
+#servicios .titulo{
+    font-size: 1.5em;
+}
+#servicios .lista-servicios{
+    width:100%;
+    height: auto;
+}
+#servicios ul{
+	margin-top: 0vh;
+	list-style: none;
+	-webkit-animation: fadeIn 43;
+	-moz-animation: fadeIn 3s;
+    animation:fadeIn 3s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid yellow;
+}
+#servicios li{
+    text-align: center;
+    width: 30%;
+    height: auto;
+    margin: 30% 1.5%;
+    border: 1px solid red;
+}
+#servicios .iconos{
+    font-size:3rem;
+    color: #4DBCF8;
+}
+#servicios  li button{
+    font-family: 'ubuntu';
+    width: 100%;
+    color: #3B6075;
+    cursor: pointer;
+    background: none;
+	padding: .6rem .5rem;
+    letter-spacing: .1rem;
+    border: #21b2a6 1px solid;
+    
+}
+#servicios button:hover{
+	box-shadow: 0 0 0 2px #21b2a6;
+	-webkit-transition: box-shadow .3s ease-out;
+  	-moz-transition: box-shadow .3s ease-out;
+  	-o-transition: box-shadow .3s ease-out;
+  	transition: box-shadow .3s ease-out;
+}
+.overlay{
+	position: fixed;
+	z-index: 9998;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .4);
+}
+.modal {
+	position: absolute;
+	width: 80%;
+	z-index: 999;
+	padding: 1rem 1.2rem;
+	background-color: #f6f6f6;
+	border-radius:1rem;
+	color: #4b4d4c;
+	right: 0%;
+	left: 10%;
+    top: 0vh;
+	-webkit-animation: pulse 10s infinite;
+	animation: pulse 10s infinite;
+	box-shadow: 0px 0px 3px 2px #21b2a6;
+}
+.modal button{
+    color: #4DBCF8;
+    text-align: center;
+    font-size: 2rem;
+
+}
+.modal h3{
+      padding-bottom: 1rem;
+}
+.modal p{
+    -webkit-animation: fadeIn 1s;
+	-moz-animation: fadeIn 1s;
+	animation:fadeIn 1s;
+	text-align: justify;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	color: #727272;
+}
+
+
+
+#nosotros{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    border: 1px solid blue;
+}
+#nosotros .nosotros-container{
+    margin-top: 0%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid purple;
+}
+#nosotros .titulo{
+    font-size: 1.5em;
+}
+#nosotros .lista-nosotros{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid yellow;
+}
+#nosotros .images-equipo{
+  position: relative;
+  width: 35vw;
+  height: 25vh;
+  margin: auto;
+  background-size: 100% 100%;
+  border-radius: 10%;
+}
+#nosotros .info{
+    margin: auto;
+    text-align: center;
+}
+.images-equipo p {
+    position: absolute;
+    right: 100%;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0.05rem;
+    vertical-align:bottom;
+    transition: 
+        right .5s ease,
+        opacity .5s ease,
+        left .5s ease;
+    border-radius: 10%;
+    left: 0;
+    opacity: 1;
+    background: rgba(59, 96, 117, 0.603);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+}
+.images-equipo:hover p {
+    opacity: 0;
+    left: 100%; 
+}
+#gonzalo {
+     background-image: url("../images/team/gonzo.jpg");
+}
+#jose {
+     background-image: url("../images/team/jose.jpg");
+}
+#erik {
+     background-image: url("../images/team/erik.jpg");
+}
+#alejandra {
+     background-image: url("../images/team/ale.JPG");
+}
+
+  
+  
+#contacto{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    border: 1px solid blue;
+}
+#contacto .contacto-container{
+    margin-top: 0%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid purple;
+    text-align: center;
+}
+#contacto .titulo-contacto{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    margin-top: 60%;
+}
+#contacto .subtitulo-contacto{
+    color: #A30000;
+    font-size: 1.5em;
+}
+#contacto a:hover{
+    color: rgb(0, 0, 0);
+}
+#contacto a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .3s;
+    background: rgb(24, 21, 21);
+}
+#contacto a:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+#contacto .dside-footer{
+    margin-top: 10%;
+    color: #999999;
+    font-size:  0.9em;
+}
 
 
 /* LANDSCAPE */
@@ -9,5 +418,37 @@ and (min-device-width:25rem)
 and (max-device-width:50rem)
 and (orientation:landscape){
 
+    header{
+        height: 12vh;
+    }
+    #cabecera #logo{
+        margin-top:0%;
+        width: 16.5%;
+    }
+
+    #boton1, #boton2{
+        top: 87%;
+    }
+
+    #home .titulo{
+        top: 35%;
+    }
+
+    #servicios li{
+        margin: 1% 1.5%;
+    }
+
+    #nosotros .images-equipo{
+        width: 20vw;
+        height: 25vh;
+        margin-left: 12.5%;
+    }
+    .images-equipo p {
+        padding: 0.5rem;
+    }
+
+    #contacto .titulo-contacto{
+        margin-top: 18%;
+    }
 }
 

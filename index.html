@@ -5,26 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dside | Devs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Desarrollos de software en Querétaro">
+    <meta porperty="og:title" content="Dside | Devs"/>
+    <meta property="og:url" content="https://yeyerock.github.io/Dside/" />
+    <meta property="og:description" content="Desarrollos de software en Querétaro">
+    <meta property="og:image" content="https://yeyerock.github.io/Dside/images/mobile-logo.jpg">
+    <meta property="og:type" content="article" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/styles.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/rsp.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!--Fuente 1 -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <!--Fuente 2 -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
 </head>
 <body>
     
     <div id="app">
         <template id="templates">
             <div class="container">
-                <router-view></router-view>
+                    <cabecera></cabecera>
+                    <elementos></elementos>
+                <div class="content">
+                    <section-home></section-home>
+                    <section-proyectos></section-proyectos>
+                    <section-nosotros></section-nosotros>
+                    <section-servicios></section-servicios>
+                    <section-contacto></section-contacto>
+                </div>
             </div>
         </template>
     </div>
 
-
-    <template id="iniciotemp">
-        <div>
-            <h1>Default Route /</h1><br>
-            <h3>{{welcome}}</h3>
-        </div>
-    </template>    
 
     
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
