@@ -168,17 +168,17 @@ Vue.component('section-servicios',{
       <p class="subtitulo-servicios" v-for="(textoServicios, indice) of textosServicios">{{textoServicios.texto}}</p>
       <transition name="bounce">
         <div class="modal" v-if="showModalspa">
-          <i class="close fas fa-times" @click="showModalspa = false"></i>
+          <i class="close  fas fa-times" @click="showModalspa = false"></i>
           <h3 v-for="(spa, indice) of spa">{{spa.titulo}}</h3>
           <p v-for="(spa, indice) of spa">{{spa.texto}}<br><b>{{spa.texto2}}</b></p>
         </div>
         <div class="modal" v-if="showModalpwa">
-          <i class="close fas fa-times" @click="showModalpwa = false"></i>
+          <i class="close  fas fa-times" @click="showModalpwa = false"></i>
           <h3 v-for="(pwa, indice) of pwa">{{pwa.titulo}}</h3>
           <p v-for="(pwa, indice) of pwa">{{pwa.texto}}</p>
         </div>
         <div class="modal" v-if="showModaldesk">
-          <i class="close fas fa-times" @click="showModaldesk = false"></i>
+          <i class="close  fas fa-times" @click="showModaldesk = false"></i>
           <h3 v-for="(desktopApp, indice) of desktopApp">{{desktopApp.titulo}}</h3>
           <p v-for="(desktopApp, indice) of desktopApp">{{desktopApp.texto}}</p>
         </div>
@@ -190,10 +190,7 @@ Vue.component('section-servicios',{
           <li><button @click="showModalpwa = true" v-for="(textoServicios, indice) of textosServicios"><i class="fas fa-mobile-alt iconos"></i><br><br><b>{{textoServicios.servicio2}}</b></button></li>
         </ul>
         
-        <div class="overlay" v-if="showModalspa" @click="showModalspa = false"></div>
-        <div class="overlay" v-if="showModalpwa" @click="showModalpwa = false"></div>
-        <div class="overlay" v-if="showModaldesk" @click="showModaldesk = false"></div>
-      </div>  
+       </div>  
     </div>
       
       <div class="titulos-container">

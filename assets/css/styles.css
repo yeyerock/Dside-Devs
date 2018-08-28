@@ -240,7 +240,7 @@ left: 5%;
 }
 .overlay{
 	position: fixed;
-	z-index: 9998;
+	z-index: 998;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -407,7 +407,7 @@ and (orientation:landscape){
     }
     #cabecera #logo{
         margin-top:0%;
-        width: 16.5%;
+        width: 15.5%;
     }
 
     #boton1, #boton2{
@@ -424,7 +424,7 @@ and (orientation:landscape){
 
     #nosotros .images-equipo{
         width: 20vw;
-        height: 25vh;
+        height: 30vh;
         margin-left: 12.5%;
     }
     .images-equipo p {

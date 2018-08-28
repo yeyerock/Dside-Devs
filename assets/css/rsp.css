@@ -4,13 +4,184 @@
 /* IPAD   768px */
 
 @media  screen and (min-width: 48rem){
+    
+       
+    #cabecera #logo{
+        margin-top:2%;
+    }
+    
+    .boton-nav{
+        width: 4rem;
+        height: 4rem;
+    }
 
+    .boton-nav i{
+        font-size: 4rem;
+    }
+    
+    
+    
+    
+    #home .titulo{
+        top: 50%;
+    }
+    
+    .subtitulo1 {
+        margin-top:8%;
+        font-size : 3rem;
+    }
+
+    .titulo	.subtitulo2 {
+        font-size : 2.5em;
+    }
+    
+    
+    
+    #portafolio .contenedor-proyectos{
+        width: 100%;
+        height: 100%;
+    }
+
+    #portafolio .proyecto {
+        width: 30%;
+        margin-top:2%;
+    }
+    
+    #portafolio .titulo{
+        font-size: 3rem;
+    }
+    
+    
+    
+    #servicios .subtitulo-servicios{
+        font-size: 2rem;
+    }
+    
+    #servicios .titulo{
+        font-size: 3rem;
+    }
+        
+    #servicios li{
+        margin: 20% 1.5%;
+    }
+
+    #servicios li button{
+        font-size: 2rem;
+    }
+
+    #servicios .iconos{
+        font-size:6rem;
+    }
+
+    #servicios  li i{
+        font-size: 2rem;
+    }
+    
+    .modal {
+        padding: 1.5rem;
+    }
+
+    .modal i{
+        font-size: 2rem;
+    }
+
+    .modal h3{
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .modal p{
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    
+    
+    
+    #nosotros .titulo{
+        font-size: 3rem;
+    }
+    
+    #nosotros .images-equipo{
+      width: 35vw;
+      height: 25vh;
+    }
+    
+    .images-equipo p {
+        font-size: 2.5rem;
+    }
+    
+      
+      
+    #contacto .titulo-contacto{
+        font-size: 3rem;
+        margin-top: 50%;
+    }
+    #contacto .subtitulo-contacto{
+        font-size: 2.5rem;
+    }
+    #contacto .dside-footer{
+        margin-top: 30%;
+        font-size:  1.5rem;
+    }
+    
 }
 
 
 /* DESKTOP 1024px */
 @media  screen  and (min-width: 64rem) {
+    header{
+        height: 12vh;
+    }
 
+    #cabecera #logo{
+        margin-top:0.7%;
+        width: 17%;
+    }
+
+    #boton1, #boton2{
+        top: 87%;
+    }
+
+    #home .titulo{
+        top: 40%;
+    }
+    
+    .subtitulo1 {
+        left: 20%;
+    }
+
+    .titulo	.subtitulo2 {
+        right : 20%;
+    }
+
+    #portafolio .proyecto {
+        width: 20%;
+        margin-top:10%;
+
+    }
+
+    #servicios li{
+        margin: 10% 1.5%;
+    }
+
+    #nosotros .images-equipo{
+        width: 20vw;
+        height: 25vh;
+        margin-left: 12.5%;
+    }
+
+    .images-equipo p {
+        font-size: 2rem;
+    }
+
+    #contacto .titulo-contacto{
+        margin-top: 18%;
+    }
+
+    #contacto .dside-footer{
+        margin-top: 20%;
+        font-size:  1.5rem;
+    }
 }
 
 
