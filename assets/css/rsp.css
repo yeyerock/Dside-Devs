@@ -197,7 +197,7 @@
 }
 
 
-/* DESKTOP LARGE */
+/* DESKTOP LARGE 1280*/
 @media  screen  and (min-width: 80rem) {
     
     #cabecera #logo{
@@ -209,6 +209,41 @@
         width: 15vw;
         height: 20vh;
         margin-left: 5%;
+    }
+
+}
+
+/* DESKTOP MEDIUM LARGE 1366*/
+@media  screen  and (min-width: 85rem) {
+    
+    
+    #cabecera #logo{
+        margin-top:0.9%;
+        width: 7.5%;
+    }
+
+    #portafolio .proyecto {
+        width: 15%;
+        margin-top:3%;
+    }
+
+    #servicios li{
+        margin: 5% 1.5%;
+    }
+
+    #nosotros .images-equipo{
+        width: 15vw;
+        height: 30vh;
+        margin-left: 2%;
+    }
+
+    #contacto .titulo-contacto{
+        margin-top: 15%;
+    }
+
+    #contacto .dside-footer{
+        margin-top: 8%;
+        font-size:  1.5rem;
     }
 
 }
@@ -228,7 +263,6 @@
     #portafolio .proyecto {
         width: 15%;
         margin-top:5%;
-
     }
 
     #servicios li{
