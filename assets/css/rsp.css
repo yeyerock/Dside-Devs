@@ -48,7 +48,7 @@
     }
     
     #portafolio .titulo{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     
@@ -58,7 +58,7 @@
     }
     
     #servicios .titulo{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
         
     #servicios li{
@@ -98,7 +98,7 @@
     
     
     #nosotros .titulo{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     #nosotros .images-equipo{
@@ -113,12 +113,14 @@
       
       
     #contacto .titulo-contacto{
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-top: 50%;
     }
+
     #contacto .subtitulo-contacto{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
+
     #contacto .dside-footer{
         margin-top: 30%;
         font-size:  1.5rem;
@@ -130,16 +132,25 @@
 /* DESKTOP 1024px */
 @media  screen  and (min-width: 64rem) {
     header{
-        height: 12vh;
+        height: 10vh;
     }
 
     #cabecera #logo{
-        margin-top:0.7%;
-        width: 17%;
+        margin-top:0.9%;
+        width: 13%;
+    }
+
+    .boton-nav{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .boton-nav i{
+        font-size: 3rem;
     }
 
     #boton1, #boton2{
-        top: 87%;
+        top: 90%;
     }
 
     #home .titulo{
@@ -147,11 +158,12 @@
     }
     
     .subtitulo1 {
-        left: 20%;
+        left: 18%;
+        margin-top:6%;
     }
 
     .titulo	.subtitulo2 {
-        right : 20%;
+        right : 18%;
     }
 
     #portafolio .proyecto {
@@ -165,13 +177,13 @@
     }
 
     #nosotros .images-equipo{
-        width: 20vw;
-        height: 25vh;
-        margin-left: 12.5%;
+        width: 15vw;
+        height: 20vh;
+        margin-left: 5%;
     }
 
     .images-equipo p {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     #contacto .titulo-contacto{
@@ -187,5 +199,64 @@
 
 /* DESKTOP LARGE */
 @media  screen  and (min-width: 80rem) {
+    
+    #cabecera #logo{
+        margin-top:0.9%;
+        width: 13%;
+    }
+
+    #nosotros .images-equipo{
+        width: 15vw;
+        height: 20vh;
+        margin-left: 5%;
+    }
+
+}
+
+
+/* DESKTOP EXTRA LARGE 1440*/
+@media  screen  and (min-width: 90rem) {
+    header{
+        height: 9vh;
+    }
+
+    #cabecera #logo{
+        margin-top:0.4%;
+        width: 8.5%;
+    }
+
+    #portafolio .proyecto {
+        width: 15%;
+        margin-top:5%;
+
+    }
+
+    #servicios li{
+        margin: 10% 1.5%;
+    }
+
+    #nosotros .images-equipo{
+        width: 15vw;
+        height: 30vh;
+        margin-left: 5%;
+    }
+
+    .images-equipo p {
+        font-size: 2rem;
+    }
+
+    #contacto .titulo-contacto{
+        margin-top: 18%;
+    }
+
+    #contacto .dside-footer{
+        margin-top: 7%;
+        font-size:  1.5rem;
+    }
+
+    
+
+    
+
     
 }

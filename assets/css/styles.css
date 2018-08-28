@@ -281,6 +281,26 @@ left: 5%;
 	color: #727272;
 }
 
+.bounce-enter-active {
+	animation: bounce-in .8s;
+}
+
+.bounce-leave-active {
+	animation: bounce-in .8s reverse;
+}
+
+@keyframes bounce-in {
+	0% {
+	  transform: scale(0);
+	}
+	50% {
+	  transform: scale(1.5);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+
 
 
 #nosotros{
@@ -370,7 +390,7 @@ left: 5%;
     margin-top: 60%;
 }
 #contacto .subtitulo-contacto{
-    color: #A30000;
+    color: #4DBCF8;
     font-size: 1.5em;
 }
 #contacto a:hover{
@@ -406,8 +426,8 @@ and (orientation:landscape){
         height: 12vh;
     }
     #cabecera #logo{
-        margin-top:0%;
-        width: 15.5%;
+        margin-top:0.5%;
+        width: 14%;
     }
 
     #boton1, #boton2{
@@ -419,13 +439,14 @@ and (orientation:landscape){
     }
 
     #servicios li{
-        margin: 1% 1.5%;
+        margin: 5% 1.5%;
     }
 
     #nosotros .images-equipo{
-        width: 20vw;
+        width: 17vw;
         height: 30vh;
-        margin-left: 12.5%;
+        margin-left: 5%;
+    
     }
     .images-equipo p {
         padding: 0.5rem;

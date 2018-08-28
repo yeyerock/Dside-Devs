@@ -11,17 +11,17 @@ var data = {
   customer2:'assets/images/customers/tfk.png',
 
   textosServicios:[{titulo:'Servicios',
-                    texto:'Evolucionamos la manera de desarrollar tecnología, ya que creamos soluciones con las tecnologías más nuevas que componen Internet.',
+                    texto:'Evolucionamos la manera de desarrollar tecnología, ya que creamos soluciones con las herramientas más nuevas que componen Internet.',
                     servicio1: 'S.P.A.',
                     servicio2: 'P.W.A.',
                     servicio3: 'Desktop Apps'}],
   spa:[{titulo:'Single Page Application',
-        texto:'Es una aplicación web de una sola página y tiene como objetivo brindar una experiencia más fluida, rapida y lógica para el usuario, ya que no necesita recargase en ningun momento. Ideales para las STARTUPS y las PYMES.', 
+        texto:'Es una aplicación web de una sola página y tiene como objetivo brindar una experiencia más fluida, rápida y lógica para el usuario, ya que no necesita recargase en ningún momento. Ideales para las STARTUPS y las PYMES.', 
         texto2:'¡Ahora mismo estás usando una!'}],
   pwa:[{titulo:'Progressive Web App',
-        texto:'Es un manera de llevar una aplicación web a el uso de una aplicación móvil, con el objetivo de comportanse igual que una aplicación nativa, utilizando las tecnologías del navegador. Se pueden tener notificaiones, gps, cámara, micrófono entre otros además de ser muy rápida.'}],
+        texto:'Es un manera de llevar el uso de una aplicación móvil a una aplicación web , con el objetivo de funcionar igual que una aplicación nativa, utilizando las tecnologías del navegador. Se pueden tener notificaciones, GPS, cámara, micrófono entre otros además de ser muy rápida.'}],
   desktopApp:[{titulo:'Desktop Apps',
-                texto:'Es el software que se encuentra instalado en tu computadora y que se puede ejecutar sin internet, esencialmente usado para redes internas de PYMES o STARTUPS con el objetivo de comunicarse a través de un sistema y desprender múltiples funcionalidades.'}],
+                texto:'Es el software que se encuentra instalado en tu computadora y que se puede ejecutar sin internet, escencialmente usado para redes internas de PYMES o STARTUPS con el objetivo de comunicarse a través de un sistema y desprender múltiples funcionalidades.'}],
   
   textosNosotros:[{titulo:'Nosotros'}],
   gonzoImages:[ 'assets/images/team/gonzo.jpg'],
@@ -191,6 +191,9 @@ Vue.component('section-servicios',{
         </ul>
         
        </div>  
+       <div class="overlay" v-if="showModalspa" @click="showModalspa = false"></div>
+			<div class="overlay" v-if="showModalpwa" @click="showModalpwa = false"></div>
+			<div class="overlay" v-if="showModaldesk" @click="showModaldesk = false"></div>
     </div>
       
       <div class="titulos-container">
@@ -210,22 +213,22 @@ Vue.component('section-nosotros',{
         <ul class="lista-nosotros">
           <li class="images-equipo" id="gonzalo" > 
           <div class="info">
-            <p v-for="(gonzoTexto, indice) of gonzoTextos">{{gonzoTexto.nombre}}<br>{{gonzoTexto.puesto}}</p><br> 
+            <p v-for="(gonzoTexto, indice) of gonzoTextos"></p>
           </div>
           </li>
           <li class="images-equipo" id="jose">
             <div class='info'>
-              <p v-for="(joseTexto, indice) of joseTextos">{{joseTexto.nombre}}<br>{{joseTexto.puesto}}</p><br> 
+              <p v-for="(joseTexto, indice) of joseTextos"></p>
             </div>
           </li>
           <li class="images-equipo" id="erik">
             <div class='info'>
-              <p v-for="(erikTexto, indice) of erikTextos">{{erikTexto.nombre}}<br>{{erikTexto.puesto}}</p><br>   
+              <p v-for="(erikTexto, indice) of erikTextos"></p>
             </div>
           </li>
           <li class="images-equipo" id="alejandra">
             <div class='info'>
-              <p v-for="(aleTexto, indice) of aleTextos">{{aleTexto.nombre}}<br>{{aleTexto.puesto}}</p><br>   
+              <p v-for="(aleTexto, indice) of aleTextos"></p>
             </div>
           </li>
         </ul>
